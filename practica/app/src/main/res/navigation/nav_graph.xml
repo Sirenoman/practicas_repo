@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/countFragment">
+
+    <fragment
+        android:id="@+id/procedureFragment"
+        android:name="com.cabrera.cabrerajonathanapp.ProcedureFragment"
+        android:label="fragment_procedure"
+        tools:layout="@layout/fragment_procedure" >
+        <argument
+            android:name="account"
+            app:argType="string"
+            android:defaultValue="00003120" />
+        <action
+            android:id="@+id/action_procedureFragment_to_resultFragment2"
+            app:destination="@id/resultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.cabrera.cabrerajonathanapp.ResultFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" >
+        <argument
+            android:name="account"
+            app:argType="string"
+            android:defaultValue="00003120" />
+        <argument
+            android:name="procedure"
+            app:argType="string"
+            android:defaultValue="Retiro" />
+    </fragment>
+    <fragment
+        android:id="@+id/countFragment"
+        android:name="com.cabrera.cabrerajonathanapp.AccountFragment"
+        android:label="CountFragment" >
+        <action
+            android:id="@+id/action_countFragment_to_procedureFragment"
+            app:destination="@id/procedureFragment" />
+    </fragment>
+</navigation>

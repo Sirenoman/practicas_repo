@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <FrameLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ResultFragment">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/resume"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="40dp"
+            android:text="@string/account_text" />
+
+        <TextView
+            android:id="@+id/result_account_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            tools:text="00003120" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="40dp"
+            android:text="@string/procedure_text" />
+
+        <TextView
+            android:id="@+id/result_procedure_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="70dp"
+            tools:text="Retiro" />
+
+
+    </FrameLayout>
+</layout>
